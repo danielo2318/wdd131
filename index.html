@@ -3,9 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD131</title>
+    <title>
+      WDD131 - Dynamic Web Fundamentals - Octavio Daniel Almeida Ramirez
+    </title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
-    <h1>WDD 131 - Danielo</h1>
+    <header>
+      <h1>WDD131: Dynamic Web Fundamentals - Octavio Almeida</h1>
+      <div class="nav-container">
+        <nav>
+          <a href="https://mx.linkedin.com/">Linkedln</a>
+          <a href="https://byupw.instructure.com/.">Canvas</a>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+            >Scripture</a
+          >
+          <a href="#" target="_blank">Final Project</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="card">
+        <h2>About Me</h2>
+        <img src="images/profile.webp" alt="me during the whole term" />
+        <p>
+          My name is Daniel I go by Dany. I have been living my whole live in
+          Leon, Guanajuato, México with my family. I enjoy listening music my
+          favorite bands at the moment are Gorillaz and System of a Down, I
+          enjoy playing baskeball and running
+        </p>
+      </section>
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://mx.linkedin.com/">Dev to Community</a></li>
+          <li><a href="https://mx.linkedin.com/">Smashing Magazine</a></li>
+          <li><a href="https://mx.linkedin.com/">CSS Tricks</a></li>
+          <li><a href="https://mx.linkedin.com/">W3 Schools</a></li>
+          <li><a href="https://mx.linkedin.com/">Udemy</a></li>
+          <li><a href="https://mx.linkedin.com/">Image Placeholder</a></li>
+        </ul>
+        <img src="images/guanajuato.webp" alt="me during the whole term" />
+      </section>
+    </main>
+
+    <!--Footer -->
+    <footer>
+      <p>
+        ©<span id="currentyear"></span> Octavio Daniel Almieda Ramirez, México
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <!-- voy a colocar el src de script en el head-->
+    <!-- <script src="scripts/getdates.js"defer></script> -->
   </body>
 </html>
