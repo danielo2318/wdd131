@@ -32,6 +32,15 @@ nav a:hover {
   text-decoration: underline;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.linkstyle a:hover {
+  text-decoration: underline;
+}
+
 main {
   display: flex;
   justify-content: center;
