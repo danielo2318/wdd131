@@ -7,14 +7,14 @@ header,
 footer {
   max-width: 640px;
   margin: 1rem auto;
-  border-style: 1 solid #bbb;
+  border: 1 solid #bbb;
   padding: 1rem;
   background-color: aliceblue;
 }
 
 main {
   display: grid;
-  grid-template: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 
