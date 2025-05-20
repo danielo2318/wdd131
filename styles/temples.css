@@ -61,6 +61,10 @@ h2 {
   display: block;
 }
 
+.navigation a:hover {
+  text-decoration: underline;
+}
+
 .navigation a {
   color: var(--text-light);
   text-decoration: none;
