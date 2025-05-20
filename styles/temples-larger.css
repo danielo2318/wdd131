@@ -1,0 +1,15 @@
+@media (min-width: 640px) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
