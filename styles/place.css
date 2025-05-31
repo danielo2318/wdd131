@@ -1,6 +1,6 @@
 :root {
   --primary-color: #d11c2d;
-  --secondary-color: #fff537;
+  --secondary-color: #fff539;
   --text-color: #333;
   --background-color: #fff;
 }
@@ -10,7 +10,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: var(--text-color);
   background-color: var(--background-color);
   margin: 0;
@@ -25,7 +26,7 @@ header {
   padding: 1rem 0 0 0;
 }
 header div {
-  background-color: #fff537;
+  background-color: var(--secondary-color);
   padding: 0.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -50,10 +51,10 @@ img {
 }
 
 .data .weather-icon {
-  width: 120px;
+  width: 50px;
   height: auto;
   display: block;
-  margin: 0.5rem auto;
+  margin: 0 auto;
 }
 
 footer {
