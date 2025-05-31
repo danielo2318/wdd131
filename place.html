@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>China Weather</title>
+    <meta name="author" content="Octavio Daniel Almeida Ramirez" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals. This website was created in order to apply the learnings were explained during week03"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>China</h1>
+      <div></div>
+    </header>
+
+    <main>
+      <picture>
+        <source srcset="images/china-large.webp" media="(min-width: 768px)" />
+        <img src="images/china-small.webp" alt="Lemurs in Madagascar" />
+      </picture>
+
+      <section class="data">
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 9,596,900 sq km</p>
+        <p><strong>Population:</strong> 1,416,534,742</p>
+        <p><strong>Capital:</strong> Pekín</p>
+        <p><strong>Languages:</strong> Mandarín, Cantonese</p>
+        <p><strong>Currency:</strong> Yuan</p>
+        <p><strong>Time Zone:</strong> GMT+8</p>
+        <p><strong>Calling Code:</strong> +86</p>
+        <p><strong>Internet TLD:</strong> .cn</p>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+        <img
+          src="images/cloudnsun.svg"
+          alt="Partly Cloudy Icon"
+          class="weather-icon"
+        />
+        <p><strong>Temperature:</strong> <span id="temp">10</span>°C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> ⛩ Octavio Daniel Almeida Ramirez ⛩ China
+      </p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #d11c2d;
+  --secondary-color: #fff537;
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+header div {
+  background-color: #fff537;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 1rem;
+}
+
+picture,
+img {
+  width: 100%;
+  height: auto;
+}
+
+.data,
+.weather {
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.data .weather-icon {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* --- Desktop view --- */
+@media (min-width: 768px) {
+  main {
+    position: relative;
+    padding: 2rem;
+    background-image: url("../images/china-large.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+  }
+
+  picture {
+    display: none;
+  }
+
+  .data,
+  .weather {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    position: absolute;
+  }
+
+  .data {
+    top: 20px;
+    left: 20px;
+  }
+
+  .weather {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .weather h2::after {
+    content: " 🌤️";
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
