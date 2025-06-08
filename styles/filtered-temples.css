@@ -1,0 +1,115 @@
+:root {
+  --primary: #483819;
+  --secondary: #ffffff;
+  --text-light: #d6d8db;
+  --text-dark: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  background-color: var(--secondary);
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  color: var(--text-light);
+}
+h2 {
+  color: black;
+}
+
+/* Menú Hamburguesa (Móvil) */
+#menu {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  list-style: none;
+  background-color: var(--primary);
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation a {
+  color: var(--text-light);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+/* Vista Desktop */
+@media (min-width: 640px) {
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex !important;
+    position: static;
+    background: none;
+    gap: 1.5rem;
+    padding: 0;
+  }
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  border: solid #0007 0.1px;
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}

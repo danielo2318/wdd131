@@ -1,0 +1,40 @@
+.table {
+  font-size: 2rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+.mainth {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.column-titles {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+thead td {
+  background-color: black;
+}
+
+.pseudoclass tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-size: smaller;
+}
