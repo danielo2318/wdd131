@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let count = localStorage.getItem("reviewCount") || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+        document.querySelector("#counter").textContent = count;
+      });
+    </script>
+  </head>
+  <body class="center-text">
+    <h1>Thank you for your review!</h1>
+    <p>You have submitted <strong id="counter">0</strong> review(s).</p>
+
+    <footer>
+      <p>&copy; 2025 Daniel Almeida | WDD131</p>
+    </footer>
+  </body>
+</html>

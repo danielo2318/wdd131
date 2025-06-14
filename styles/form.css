@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #eee;
+  color: #000;
+}
+
+/* Encabezado */
+header {
+  background-color: #606c38;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: #fefae0;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos y etiquetas */
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form select,
+form input[type="date"],
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid #aaa;
+  border-radius: 0.25rem;
+}
+
+/* Estilo para rating */
+.rating-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.rating-options label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.checkbox-group {
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.optional {
+  font-size: 0.8rem;
+  color: #555;
+  font-style: italic;
+}
+
+form input[type="submit"] {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #dda25e38;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #606c38;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
