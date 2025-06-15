@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beatboard | Your Music Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/beatboard2.svg" />
+    <link rel="apple-touch-icon" href="images/beatboard2.svg" />
+    <link rel="stylesheet" href="styles/beatboard.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script src="scripts/beatboard.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo none">
+        <img
+          src="images/beatboard3.svg"
+          alt="Logo Beatboard"
+          class="logo-icon pulse"
+        />
+        <span>Beatboard</span>
+      </a>
+      <button id="menu" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul id="navigation">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="bandas.html">Bandas</a></li>
+          <li><a href="descubre.html">Descubre</a></li>
+          <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-image">
+        <div class="hero-content">
+          <h1>Siente el ritmo, únete al movimiento</h1>
+          <p>
+            Descubre géneros, bandas emblemáticas y recomendaciones
+            personalizadas.
+          </p>
+        </div>
+      </section>
+
+      <section class="intro">
+        <h2>Géneros Populares</h2>
+        <div class="generos-container">
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Rock</h3>
+              <p>Caifanes, Zoé, Odisseo, Enjambre, DLD</p>
+            </div>
+          </a>
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Cumbia</h3>
+              <p>Los Ángeles Azules, Celso Piña, Selena</p>
+            </div>
+          </a>
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Rap</h3>
+              <p>WOS, Milo J, J Cole, Kanye West, Kendrick Lamar</p>
+            </div>
+          </a>
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Regional Mexicano</h3>
+              <p>Intocable, Grupo Frontera, Grupo Firme</p>
+            </div>
+          </a>
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Reggaeton</h3>
+              <p>Bad Bunny, Arcangel, Don Omar, Rosalia</p>
+            </div>
+          </a>
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Pop</h3>
+              <p>Natalia Lafourcade, Harry Styles, Julieta Venegas</p>
+            </div>
+          </a>
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Electrónica</h3>
+              <p>Daft Punk, Avicii, Robin Schulz, Calvin Harris</p>
+            </div>
+          </a>
+          <a href="bandas.html" class="card-link">
+            <div class="genero-card">
+              <h3>Alternativo</h3>
+              <p>Siddartha, Porter, Kevin Kaarl, Little Jesus</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer>
+      <p>©<span id="year"></span> Octavio Daniel Almieda Ramirez, México | <a href="referencias.html">Referencias</p>
+  <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

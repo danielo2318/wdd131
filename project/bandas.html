@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandas Mexicanas | Beatboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/beatboard2.svg" />
+    <link rel="apple-touch-icon" href="images/beatboard2.svg" />
+    <link rel="stylesheet" href="styles/beatboard.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script src="scripts/bandas.js" defer></script>
+    <script src="scripts/beatboard.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo none">
+        <img
+          src="images/beatboard3.svg"
+          alt="Logo Beatboard"
+          class="logo-icon pulse"
+        />
+        <span>Beatboard</span>
+      </a>
+      <button id="menu" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul id="navigation">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="bandas.html">Bandas</a></li>
+          <li><a href="descubre.html">Descubre</a></li>
+          <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Bandas Destacadas</h1>
+      <div class="filtros">
+        <button class="filtro-btn" data-genero="todos">Todos</button>
+        <button class="filtro-btn" data-genero="rock">Rock</button>
+        <button class="filtro-btn" data-genero="cumbia">Cumbia</button>
+        <button class="filtro-btn" data-genero="rap">Rap</button>
+        <button class="filtro-btn" data-genero="regional mexicano">
+          Regional Mexicano
+        </button>
+        <button class="filtro-btn" data-genero="reggaeton">Reggaeton</button>
+        <button class="filtro-btn" data-genero="pop">Pop</button>
+        <button class="filtro-btn" data-genero="electronica">
+          Electrónica
+        </button>
+        <button class="filtro-btn" data-genero="alternativo">
+          Alternativo
+        </button>
+      </div>
+      <div id="bandas-container" class="bandas-grid"></div>
+    </main>
+    <footer>
+      <p>©<span id="year"></span> Octavio Daniel Almieda Ramirez, México | <a href="referencias.html">Referencias</p>
+  <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

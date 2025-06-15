@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubre tu Banda | Beatboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/beatboard2.svg" />
+    <link rel="apple-touch-icon" href="images/beatboard2.svg" />
+    <link rel="stylesheet" href="styles/beatboard.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script src="scripts/descubre.js" defer></script>
+    <script src="scripts/beatboard.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo none">
+        <img
+          src="images/beatboard3.svg"
+          alt="Logo Beatboard"
+          class="logo-icon pulse"
+        />
+        <span>Beatboard</span>
+      </a>
+      <button id="menu" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul id="navigation">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="bandas.html">Bandas</a></li>
+          <li><a href="descubre.html">Descubre</a></li>
+          <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Descubre tu Banda</h1>
+      <form id="recomendador-form">
+        <div class="form-group">
+          <label for="genero">Género:</label>
+          <select id="genero" required>
+            <option value="">Selecciona...</option>
+            <option value="rock">Rock</option>
+            <option value="cumbia">Cumbia</option>
+            <option value="rap">Rap</option>
+            <option value="regional mexicano">Regional Mexicano</option>
+            <option value="reggaeton">Reggaeton</option>
+            <option value="pop">Pop</option>
+            <option value="electronica">Electrónica</option>
+            <option value="alternativo">Alternativo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="epoca">Época:</label>
+          <select id="epoca" required>
+            <option value="">Selecciona...</option>
+            <option value="80s">Antes de los 2000s</option>
+            <option value="2000s">Despues de los 2000s</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Recomendar</button>
+      </form>
+
+      <div id="resultado" class="resultado-container"></div>
+    </main>
+
+    <footer>
+      <p>©<span id="year"></span> Octavio Daniel Almieda Ramirez, México | <a href="referencias.html">Referencias</p>
+  <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

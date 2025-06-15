@@ -1,0 +1,116 @@
+/* Reset y estilos base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #121212;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Header fijo */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Menú desktop (flex row) */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
+
+/* Hero Image */
+.hero-image {
+  min-height: 100vh;
+  background-image: url("https://picsum.photos/1280/720");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+/* Menú hamburguesa (mobile) */
+#menu {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive: Menú hamburguesa */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu {
+    display: block;
+  }
+}

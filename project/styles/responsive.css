@@ -1,0 +1,67 @@
+/* Menú hamburguesa (mobile) */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #ff6600;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .generos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bandas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Vista desktop */
+@media (min-width: 769px) {
+  .bandas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .bandas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
